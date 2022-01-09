@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/dashboard.css">
+<body>
+<div class="wrapper">
+	<!-- sidebar Starts -->
+	<div class="sidebar">
+		<div class="sidebar-logo">
+			<a href="employer-dashboard.html">
+				<img src="img/logo.png" alt="Logo" />
+			</a>
+		</div>
+		<div class="sidebar-menu">
+			<ul>
+				<li><a href="dashboard.html" class="active"><img src="img/dash-icon-1.png" class="dark" /><img src="img/dash-icon-1-1.png" class="light" />dashboards</a></li>
+				<li>
+					<a href="#" class="dropdown-btn" id="dropdown-btn"><img src="img/dash-icon-2.png" class="dark" /><img src="img/dash-icon-2-2.png" class="light" />Company profile <i class="fa fa-angle-down angle-down"></i></a></li>
+				</li>
+				<li class="job-dropdown"><a href="company-details.html"><img src="img/dash-icon-10.png" class="dark" /><img src="img/dash-icon-10-10.png" class="light" />company details</a></li>
+				<li class="job-dropdown"><a href="contact-person.html"><img src="img/dash-icon-10.png" class="dark" /><img src="img/dash-icon-10-10.png" class="light" />contact person</a></li>
+				<li><a href="post-job.html" class="dropdown-btn"><img src="img/dash-icon-3.png" class="dark" /><img src="img/dash-icon-3-3.png" class="light" />post a new job</a></li>
+				</li>
+				<li><a href="search.html"><img src="img/dash-icon-11.png" class="dark" /><img src="img/dash-icon-11-11.png" class="light" />search</a></li>
+				<li><a href="payments.html"><img src="img/dash-icon-12.png" class="dark" /><img src="img/dash-icon-12-12.png" class="light" />payments</a></li>
+				<li><a href="manage-jobs.html"><img src="img/dash-icon-13.png" class="dark" /><img src="img/dash-icon-13-13.png" class="light" />manage jobs</a></li>
+				<li><a href="applications.html"><img src="img/dash-icon-5.png" class="dark" /><img src="img/dash-icon-5-5.png" class="light" />applications</a></li>
+				<li><a href="shortlisted-resume.html"><img src="img/dash-icon-3.png" class="dark" /><img src="img/dash-icon-3-3.png" class="light" />shortlisted resume</a></li>
+				<li><a href="messages.html"><img src="img/dash-icon-14.png" class="dark" /><img src="img/dash-icon-14-14.png" class="light" />messages</a></li>
+				<li><a href="logout.html"><i class="fa fa-sign-out"></i>logout</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- sidebar Ends -->
+
+	<!-- Main Content Starts -->
+	<div class="main">
+		<!-- Header Starts -->
+		<div class="header">
+			<div class="links">
+				<ul>
+					<li>
+						<a href="#"><img src="img/search-1.png" alt="Search icon"></a>
+					</li>
+					<li class="notify-icon" >
+						<img src="img/bell-icon.png" alt="Bell Icon" />
+							<span>0</span>
+						</i>
+					</li>
+					<li><span>Jane Doe</span><img src="img/profile-3.png" alt="Profile Pic"></li>
+				</ul>
+			</div>
+			<div class="toggle-btn">
+				<i onclick="openNav()" class="fa fa-bars"></i>
+			</div>
+		</div>
+		<!-- Header Ends -->
+		<div class="main-content">
+			<!-- Intro Section Starts -->
+			<div class="intro">
+				<div class="intro-img-text">
+					<div class="intro-img">
+						<img src="img/profile-4.png" alt="Profile Image" />
+					</div>
+					<div class="intro-text">
+						<div class="intro-text-head">zuxx nigeria limited</div>
+						<ul>
+							<li><img src="img/square.png" /><span>info@zuxxltd.com</span></li>
+							<li><img src="img/square.png" /><span>New York, New York, United States</span></li>
+							<li><img src="img/square.png" /><span>+234 8099 -2221-110</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="subscription-plan">
+					<div class="subscription-plan-head">
+						<p>Subscription plan <a href="#" class="standard-btn">standard</a></p>
+					</div>
+					<div class="subscription-plan-body">
+						<p>Upgrade your account to post job and access<br> Resume instanly</p>
+					</div>
+					<div class="subscription-plan-footer">
+						<a href="#" class="post-job-btn">post a job</a>
+					</div>
+				</div>
+			</div>
+			<!-- intro section ends -->
+
+			<!-- Boxes section starts -->
+			<div class="boxes">
+				<div class="boxes-items">
+					<div class="boxes-item bg-white">
+						<img src="img/badge2.png" class="badge" alt="Badge" />
+						<p>Congratulations 🎉 Jane!<br><span>Your Profile is almost complete</span></p>
+						<div class="percent">
+							80%
+						</div>
+						<div class="complete-profile-btn">
+							<a href="#">complete profile</a>
+						</div>
+					</div>
+					<div class="boxes-item bg-green">
+						<div class="boxes-item-number">52</div>
+						<div class="boxes-item-icon">
+							<img src="img/entypo_briefcase2.png" alt="Brief Case" />
+						</div>
+						<div class="boxes-item-title">jobs</div>
+					</div>
+					<div class="boxes-item bg-red">
+						<div class="boxes-item-number">456</div>
+						<div class="boxes-item-icon">
+							<img src="img/view.png" alt="Brief Case" />
+						</div>
+						<div class="boxes-item-title">profile viewed</div>
+					</div>
+					<div class="boxes-item bg-orange">
+						<div class="boxes-item-number">25</div>
+						<div class="boxes-item-icon">
+							<img src="img/apps.png" alt="Brief Case" />
+						</div>
+						<div class="boxes-item-title">Applications</div>
+					</div>
+				</div>
+			</div>
+			<!-- Boxes section ends -->
+
+			<!-- Activity and Status Section Starts -->
+			<div class="activity-status">
+				<div class="activity-status-items">
+					<div class="activity-status-item">
+						<div class="activity-status-item-head">
+							<p>job activity</p>
+						</div>
+						<div class="activity-status-item-body">
+							<div class="table-responsive">
+								<table>
+									<tr>
+										<td>all jobs</td>
+										<td>52</td>
+									</tr>
+									<tr>
+										<td>expired jobs</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>active jobs</td>
+										<td>52</td>
+									</tr>
+									<tr>
+										<td>applications</td>
+										<td>97</td>
+									</tr>
+									<tr>
+										<td>track applicant</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>all jobs</td>
+										<td>52</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="activity-status-item">
+						<div class="activity-status-item-head">
+							<p>job status</p>
+						</div>
+						<div class="activity-status-item-body">
+							<!-- https://codepen.io/jlalovi/details/bIyAr -->
+							 
+							<!-- LINE CHART BLOCK (LEFT-CONTAINER) -->
+						  <div class="bar-chart-block block">
+						    <div class='grafico bar-chart'>
+						       <ul class='eje-y'>
+						         <li data-ejeY='100'></li>
+						         <li data-ejeY='75'></li>
+						         <li data-ejeY='50'></li>
+						         <li data-ejeY='25'></li>
+						         <li data-ejeY='0'></li>
+						       </ul>
+						       <ul class='eje-x'>
+						         <li data-ejeX='37'><i>Jobs</i></li>
+						         <li data-ejeX='56'><i>Active Jobs</i></li>
+						         <li data-ejeX='25'><i>Total Applicant</i></li>
+						         <li data-ejeX='18'><i>Interview</i></li>
+						       </ul>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="activity-status-item">
+						<div class="activity-status-item-head">
+							<p>resume activity</p>
+						</div>
+						<div class="activity-status-item-body">
+							<div class="table-responsive">
+								<table>
+									<tr>
+										<td>search resume</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>search job seekers</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>shortlisted resume</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>suggested job seeker</td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="activity-status-item">
+						<div class="activity-status-item-head">
+							<p>resume status</p>
+						</div>
+						<div class="activity-status-item-body">
+							<div class="pieID pie">
+					    </div>
+					    <ul class="pieID legend">
+					      <li>
+					        <em>Hired</em>
+					        <span>718</span>
+					      </li>
+					      <li>
+					        <em>Shortlisted</em>
+					        <span>531</span>
+					      </li>
+					      <li>
+					        <em>Saved</em>
+					        <span>868</span>
+					      </li>
+					      <li>
+					        <em>Not Suitable</em>
+					        <span>1145</span>
+					      </li>
+					    </ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Activity and Status Section Ends -->
+
+			<!-- Latest Jobs Section Starts -->
+			<div class="latest-jobs">
+				<div class="latest-jobs-head">
+					<p>your latest jobs</p>
+				</div>
+				<div class="latest-jobs-body">
+					<div class="table-responsive">
+						<table>
+							<tr>
+								<td>07/05/2021</td>
+								<td><b>graphic designer</b></td>
+								<td><span class="active">1</span> new appication <span class="active">(</span><span class="active">approved 0</span> <span class="danger">not suitable 0)</span></td>
+								<td><b>20 views</b></td>
+							</tr>
+							<tr>
+								<td>07/05/2021</td>
+								<td><b>graphic designer</b></td>
+								<td><span class="active">1</span> new appication <span class="active">(</span><span class="active">approved 0</span> <span class="danger">not suitable 0)</span></td>
+								<td><b>20 views</b></td>
+							</tr>
+							<tr>
+								<td>07/05/2021</td>
+								<td><b>graphic designer</b></td>
+								<td><span class="active">1</span> new appication <span class="active">(</span><span class="active">approved 0</span> <span class="danger">not suitable 0)</span></td>
+								<td><b>20 views</b></td>
+							</tr>
+							<tr>
+								<td>07/05/2021</td>
+								<td><b>graphic designer</b></td>
+								<td><span class="active">1</span> new appication <span class="active">(</span><span class="active">approved 0</span> <span class="danger">not suitable 0)</span></td>
+								<td><b>20 views</b></td>
+							</tr>
+							<tr>
+								<td>07/05/2021</td>
+								<td><b>graphic designer</b></td>
+								<td><span class="active">1</span> new appication <span class="active">(</span><span class="active">approved 0</span> <span class="danger">not suitable 0)</span></td>
+								<td><b>20 views</b></td>
+							</tr>
+							<tr>
+								<td>07/05/2021</td>
+								<td><b>graphic designer</b></td>
+								<td><span class="active">1</span> new appication <span class="danger">(</span><span class="active">approved 0</span> <span class="danger">not suitable 0)</span></td>
+								<td><b>20 views</b></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- Latest Jobs Section Ends -->
+		</div>
+	</div>
+	<!-- Main Content Ends -->
+</div>
+<!-- Mobile Sidebar Starts -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="sidenav-img">
+  	<img src="img/profile-2.png">
+  </div>
+  <ul>
+  	<li><a href="employer-dashboard.html"><img src="img/dash-icon-1.png" />dashboard</a></li>
+  	<li><a href="profile.html"><img src="img/dash-icon-2.png" />profile</a></li>
+  	<li><a href="#"><img src="img/dash-icon-3.png" />job</a></li>
+  	<li><a href="#"><img src="img/dash-icon-4.png" />companies</a></li>
+  	<li><a href="#"><img src="img/dash-icon-5.png" />my resume</a></li>
+  	<li><a href="job-centers.html"><img src="img/dash-icon-6.png" />job centers</a></li>
+  	<li><a href="transactions.html"><img src="img/dash-icon-7.png" />transactions</a></li>
+  	<li><a href="interviews.html"><img src="img/dash-icon-8.png" />interviews</a></li>
+  	<li><a href="logout.html"><img src="img/dash-icon-9.png" />logout</a></li>
+  </ul>
+</div>
+<!-- Mobile Sidebar Ends -->
+
+<!-- Footer Section Starts -->
+<footer class="footer">
+	<div class="footer-bottom-img1">
+		<img src="img/footer-bg.png" alt="Footer BG" />
+	</div>
+	<div class="footer-bottom-img2">
+		<img src="img/footer-bg1.png" alt="Footer BG " />
+	</div>
+	<div class="footer-items">
+		<div class="footer-item">
+			<div class="footer-item-head">
+				<p>company</p>
+			</div>
+			<div class="footer-item-links">
+				<ul>
+					<li><a href="about-us.html">about us</a></li>
+					<li><a href="terms.html">terms of services</a></li>
+					<li><a href="privacy.html">privacy</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-item">
+			<div class="footer-item-head">
+				<p>faj</p>
+			</div>
+			<div class="footer-item-links">
+				<ul>
+					<li><a href="job-search.html">job search</a></li>
+					<li><a href="pricing-plans.html">price plans</a></li>
+					<li><a href="employers.html">employers</a></li>
+					<li><a href="job-seekers.html">job seekers</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-item">
+			<div class="footer-item-head">
+				<p>resources</p>
+			</div>
+			<div class="footer-item-links">
+				<ul>
+					<li><a href="self-employed.html">become self employed</a></li>
+					<li><a href="loop-vc.html">loop VC</a></li>
+					<li><a href="nysc.html">NYSC</a></li>
+					<li><a href="ayeen.html">ayeen</a></li>
+					<li><a href="nde.html">NDE</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-item">
+			<div class="footer-item-head">
+				<p>job seakers</p>
+			</div>
+			<div class="footer-item-links">
+				<ul>
+					<li><a href="cv-creator.html">CV creator</a></li>
+					<li><a href="job-centers.html">job centers</a></li>
+					<li><a href="job-seeker-videos.html">job seeker videos</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-item">
+			<div class="footer-item-head">
+				<p>help</p>
+			</div>
+			<div class="footer-item-links">
+				<ul>
+					<li><a href="faq.html">FAQs</a></li>
+					<li><a href="contact-us.html">contact us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="app-btns">
+		<a href="#"><img src="img/app.png" alt="App Store" /></a>
+		<a href="#"><img src="img/play.png" alt="Play Store" /></a>
+	</div>
+	<div class="copyright">
+		<p>Copyright 2021 FindAJob, LLC</p>
+	</div>
+</footer>	
+<!-- Footer Section Ends	 -->
+	<script src="js/dashboard.js"></script>
+	<!-- Include jQuery -->
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  	  $("#dropdown-btn").click(function(){
+  	    $(".job-dropdown").toggle();
+  	  });
+  	  $("#dropdown-btn1").click(function(){
+  	    $(".resume-dropdown").toggle();
+  	  });
+  	});
+  </script>
+  <script type="text/javascript">
+  	function sliceSize(dataNum, dataTotal) {
+  	  return (dataNum / dataTotal) * 360;
+  	}
+  	function addSlice(sliceSize, pieElement, offset, sliceID, color) {
+  	  $(pieElement).append("<div class='slice "+sliceID+"'><span></span></div>");
+  	  var offset = offset - 1;
+  	  var sizeRotation = -179 + sliceSize;
+  	  $("."+sliceID).css({
+  	    "transform": "rotate("+offset+"deg) translate3d(0,0,0)"
+  	  });
+  	  $("."+sliceID+" span").css({
+  	    "transform"       : "rotate("+sizeRotation+"deg) translate3d(0,0,0)",
+  	    "background-color": color
+  	  });
+  	}
+  	function iterateSlices(sliceSize, pieElement, offset, dataCount, sliceCount, color) {
+  	  var sliceID = "s"+dataCount+"-"+sliceCount;
+  	  var maxSize = 179;
+  	  if(sliceSize<=maxSize) {
+  	    addSlice(sliceSize, pieElement, offset, sliceID, color);
+  	  } else {
+  	    addSlice(maxSize, pieElement, offset, sliceID, color);
+  	    iterateSlices(sliceSize-maxSize, pieElement, offset+maxSize, dataCount, sliceCount+1, color);
+  	  }
+  	}
+  	function createPie(dataElement, pieElement) {
+  	  var listData = [];
+  	  $(dataElement+" span").each(function() {
+  	    listData.push(Number($(this).html()));
+  	  });
+  	  var listTotal = 0;
+  	  for(var i=0; i<listData.length; i++) {
+  	    listTotal += listData[i];
+  	  }
+  	  var offset = 0;
+  	  var color = [
+  	    "cornflowerblue", 
+  	    "olivedrab", 
+  	    "orange", 
+  	    "tomato", 
+  	    "crimson", 
+  	    "purple", 
+  	    "turquoise", 
+  	    "forestgreen", 
+  	    "navy", 
+  	    "gray"
+  	  ];
+  	  for(var i=0; i<listData.length; i++) {
+  	    var size = sliceSize(listData[i], listTotal);
+  	    iterateSlices(size, pieElement, offset, i, 0, color[i]);
+  	    $(dataElement+" li:nth-child("+(i+1)+")").css("border-color", color[i]);
+  	    offset += size;
+  	  }
+  	}
+  	createPie(".pieID.legend", ".pieID.pie");
+
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+

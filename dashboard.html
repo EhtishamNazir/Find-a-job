@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/dashboard.css">
+<body>
+<div class="wrapper">
+	<!-- sidebar Starts -->
+	<div class="sidebar">
+		<div class="sidebar-logo">
+			<a href="dashboard.html">
+				<img src="img/logo.png" alt="Logo" />
+			</a>
+		</div>
+		<div class="sidebar-menu">
+			<ul>
+				<li><a href="dashboard.html" class="active"><img src="img/dash-icon-1.png" class="dark" /><img src="img/dash-icon-1-1.png" class="light" />dashboards</a></li>
+				<li><a href="profile.html"><img src="img/dash-icon-2.png" class="dark" /><img src="img/dash-icon-2-2.png" class="light" />profile</a></li>
+				<li>
+					<a href="#" class="dropdown-btn" id="dropdown-btn"><img src="img/dash-icon-3.png" class="dark" /><img src="img/dash-icon-3-3.png" class="light" />job <i class="fa fa-angle-down angle-down"></i></a></li>
+				</li>
+				<li class="job-dropdown"><a href="#"><img src="img/dash-icon-10.png" class="dark" /><img src="img/dash-icon-10-10.png" class="light" />find a job</a></li>
+				<li class="job-dropdown"><a href="#"><img src="img/dash-icon-10.png" class="dark" /><img src="img/dash-icon-10-10.png" class="light" />application</a></li>
+				<li class="job-dropdown"><a href="saved-jobs.html"><img src="img/dash-icon-10.png" class="dark" /><img src="img/dash-icon-10-10.png" class="light" />saved jobs</a></li>
+				<li>
+					<a href="companies.html" class="dropdown-btn"><img src="img/dash-icon-4.png" class="dark" /><img src="img/dash-icon-4-4.png" class="light" />companies</a></li>
+				</li>
+				<li>
+					<a href="#" class="dropdown-btn" id="dropdown-btn1"><img src="img/dash-icon-3.png" class="dark" /><img src="img/dash-icon-3-3.png" class="light" />my resume <i class="fa fa-angle-down angle-down"></i></a></li>
+				</li>
+				<li class="resume-dropdown"><a href="upload-resume.html"><img src="img/dash-icon-10.png" class="dark" /><img src="img/dash-icon-10-10.png" class="light" />upload resume</a></li>
+				<li class="resume-dropdown"><a href="video-resume.html"><img src="img/dash-icon-10.png" class="dark" /><img src="img/dash-icon-10-10.png" class="light" />video resume</a></li>
+				<li><a href="job-centers.html"><img src="img/dash-icon-6.png" class="dark" /><img src="img/dash-icon-6-6.png" class="light" />job centers</a></li>
+				<li><a href="transactions.html"><img src="img/dash-icon-7.png" class="dark" /><img src="img/dash-icon-7-7.png" class="light" />transactions</a></li>
+				<li><a href="interviews.html"><img src="img/dash-icon-8.png" class="dark" /><img src="img/dash-icon-8-8.png" class="light" />interviews</a></li>
+				<li><a href="logout.html"><i class="fa fa-sign-out"></i>logout</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- sidebar Ends -->
+
+	<!-- Main Content Starts -->
+	<div class="main">
+		<!-- Header Starts -->
+		<div class="header">
+			<div class="page-name">
+				Dashboard
+			</div>
+			<div class="links">
+				<ul>
+					<li>
+						<a href="#"><img src="img/search-1.png" alt="Search icon"></a>
+					</li>
+					<li class="notify-icon" >
+						<img src="img/bell-icon.png" alt="Bell Icon" />
+							<span>0</span>
+						</i>
+					</li>
+					<li><span>Michael Adewale</span><img src="img/profile.png" alt="Profile Pic"></li>
+				</ul>
+			</div>
+			<div class="toggle-btn">
+				<i onclick="openNav()" class="fa fa-bars"></i>
+			</div>
+		</div>
+		<!-- Header Ends -->
+		<div class="main-content">
+			<!-- Intro Section Starts -->
+			<div class="intro">
+				<div class="intro-img-text">
+					<div class="intro-img">
+						<img src="img/profile-2.png" alt="Profile Image" />
+					</div>
+					<div class="intro-text">
+						<div class="intro-text-head">Michael adewale</div>
+						<ul>
+							<li><img src="img/entypo_briefcase.png" /><span>accountant</span></li>
+							<li><img src="img/carbon_location-filled.png" /><span>abuja, nigeria</span></li>
+							<li><img src="img/bx_bxs-phone-call.png" /><span>+234 8099 -2221-110</span></li>
+							<li><span>not verified</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="subscription-plan">
+					<div class="subscription-plan-head">
+						<p>Subscription plan <a href="#" class="standard-btn">standard</a><a href="#" class="upgrade-btn">Upgrade</a></p>
+					</div>
+					<div class="subscription-plan-body">
+						<p>Upgrade your account to post job and access<br> Resume instanly</p>
+					</div>
+					<div class="subscription-plan-footer">
+						<div class="status">
+							<p><img src="img/ic_baseline-work.png" /><span>job status:</span></p>
+						</div>
+						<div class="availability">
+							<p>available for job&nbsp;&nbsp;<i class="fa fa-angle-down"></i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- intro section ends -->
+
+			<!-- Boxes section starts -->
+			<div class="boxes">
+				<div class="boxes-items">
+					<div class="boxes-item bg-white">
+						<img src="img/Badge2.png" class="badge" alt="Badge" />
+						<p>Congratulations 🎉 Michael!<br>Next Step: Add Employment History</p>
+						<div class="progress">
+							<div class="progress-item bg-red"></div>
+							<div class="progress-item"></div>
+							<div class="progress-item"></div>
+							<div class="progress-item"></div>
+						</div>
+						<div class="complete-profile-btn">
+							<a href="#">complete profile</a>
+						</div>
+					</div>
+					<div class="boxes-item bg-green">
+						<div class="boxes-item-number">52</div>
+						<div class="boxes-item-icon">
+							<img src="img/entypo_briefcase2.png" alt="Brief Case" />
+						</div>
+						<div class="boxes-item-title">jobs</div>
+					</div>
+					<div class="boxes-item bg-red">
+						<div class="boxes-item-number">45</div>
+						<div class="boxes-item-icon">
+							<img src="img/Group1902.png" alt="Brief Case" />
+						</div>
+						<div class="boxes-item-title">companies</div>
+					</div>
+					<div class="boxes-item bg-orange">
+						<div class="boxes-item-number">25</div>
+						<div class="boxes-item-icon">
+							<img src="img/Group.png" alt="Brief Case" />
+						</div>
+						<div class="boxes-item-title">Interview</div>
+					</div>
+				</div>
+			</div>
+			<!-- Boxes section ends -->
+
+			<!-- Recommended Jos and Interview section starts -->
+			<div class="jobs-interview">
+				<div class="recommended-jobs">
+					<div class="recommended-jobs-head">
+						<p class="recommended-jobs-head-text">recommended job</p>
+						<p class="recommended-jobs-head-desc">Based on your profile and career interests</p>
+					</div>
+					<div class="recommended-jobs-body">
+						<div class="recommended-jobs-item">
+							<div class="badge"><img src="img/badge.png" alt="Badge"></div>
+							<div class="recommended-jobs-item-head-btn">
+								<a href="#" class="orange">part time</a>
+								<a href="#" class="red"><img src="img/heart.png" /><span>save job</span></a>
+							</div>
+							<div class="recommended-jobs-item-head">
+								<div class="recommended-jobs-item-head-img">
+									<img src="img/d.png" alt="D" />
+								</div>
+								<div class="recommended-jobs-item-head-text">
+									<p class="project-title">client accountant </p>
+									<p class="project-category">Deloitte And Touche<img src="img/question.png" alt="Question Mark"><img src="img/check.png" alt="Check Mark"></p>
+								</div>
+							</div>
+							<div class="recommended-jobs-item-main">
+								<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet auctor leo, ornare eget amet. In aliqua.</p>
+								<p class="btns"><a href="#" class="orange">part time</a>
+								<a href="#" class="red"><img src="img/heart.png" /><span>save job</span></a></p>
+							</div>
+							<div class="recommended-jobs-item-footer">
+								<div class="recommended-jobs-item-footer-item">
+									<img src="img/location.png" alt="Location" /><span>Lagos</span>
+								</div>
+								<div class="recommended-jobs-item-footer-item">
+									<img src="img/money.png" alt="Money" /><span>35K - 45K</span>
+								</div>
+								<div class="recommended-jobs-item-footer-item">
+									<img src="img/clock.png" alt="Clock" /><span>2 hours ago</span>
+								</div>
+							</div>
+						</div>
+						<div class="recommended-jobs-item">
+							<div class="badge"><img src="img/badge.png" alt="Badge"></div>
+							<div class="recommended-jobs-item-head-btn">
+								<a href="#" class="orange">part time</a>
+								<a href="#" class="red"><img src="img/heart.png" /><span>save job</span></a>
+							</div>
+							<div class="recommended-jobs-item-head">
+								<div class="recommended-jobs-item-head-img">
+									<img src="img/d.png" alt="D" />
+								</div>
+								<div class="recommended-jobs-item-head-text">
+									<p class="project-title">client accountant </p>
+									<p class="project-category">Deloitte And Touche<img src="img/question.png" alt="Question Mark"><img src="img/check.png" alt="Check Mark"></p>
+								</div>
+							</div>
+							<div class="recommended-jobs-item-main">
+								<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet auctor leo, ornare eget amet. In aliqua.</p>
+								<p class="btns"><a href="#" class="orange">part time</a>
+								<a href="#" class="red"><img src="img/heart.png" /><span>save job</span></a></p>
+							</div>
+							<div class="recommended-jobs-item-footer">
+								<div class="recommended-jobs-item-footer-item">
+									<img src="img/location.png" alt="Location" /><span>Lagos</span>
+								</div>
+								<div class="recommended-jobs-item-footer-item">
+									<img src="img/money.png" alt="Money" /><span>35K - 45K</span>
+								</div>
+								<div class="recommended-jobs-item-footer-item">
+									<img src="img/clock.png" alt="Clock" /><span>2 hours ago</span>
+								</div>
+							</div>
+						</div>
+						<div class="click-more-jobs-btn">
+							<a href="#">see all jobs ></a>
+						</div>
+					</div>
+				</div>
+				<div class="scheduled-interviews">
+					<div class="scheduled-interviews-head">
+						<p>scheduled interview</p>
+					</div>
+					<div class="scheduled-interviews-header">
+						<img src="img/Illustration.png" />
+					</div>
+					<div class="scheduled-interviews-body">
+						<div class="date-briefing">
+							<div class="date"><p>thu<br><span>24</span></p></div>
+							<div class="briefing">
+								<p class="heading">interview & job briefing</p>
+								<p class="desc">Zuxx Nigeria Limited</p>
+							</div>
+						</div>
+						<div class="date-time">
+							<div class="date-time-img">
+								<img src="img/Icon.png">
+							</div>
+							<div class="date-time-text">
+								<p class="date">Sat, May 25, 2020</p>
+								<p class="time">10:AM to 6:PM</p>
+							</div>
+						</div>
+						<div class="date-time">
+							<div class="date-time-img">
+								<img src="img/google-meet-logo1.png">
+							</div>
+							<div class="date-time-text">
+								<p class="date">GoogleMeet</p>
+								<p class="time">meet.google.com/jth-chlt-hfg</p>
+							</div>
+						</div>
+						<div class="date-time-images">
+							<img src="img/photo-1568602471122-7832951cc4c5(1).png">
+							<img class="date-time-footer-img" src="img/photo-1568602471122-7832951cc4c5(2).png">
+							<img class="date-time-footer-img" src="img/photo-1568602471122-7832951cc4c5(3).png">
+							<img class="date-time-footer-img" src="img/photo-1568602471122-7832951cc4c5(4).png">
+							<span>+5</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="jobs-interview">
+				<div class="recommended-jobs">
+					<div class="recommended-jobs-head">
+						<p class="recommended-jobs-head-text">my applications</p>
+						<p class="recommended-jobs-head-desc">Your recently sent applications</p>
+					</div>
+					<div class="recommended-jobs-body" style="overflow-x:auto;">
+						<div style="overflow-x:auto;">
+						  <table class="table">
+						    <tr>
+						    	<th>title</th>
+						    	<th>status</th>
+						    	<th>role</th>
+						    	<th>salary</th>
+						    	<th>applied on</th>
+						    </tr>
+						    <tr>
+						    	<td>IT Support Engineer<br><span>Cloud Interactive Associates</span></td>
+						    	<td class="active">active</td>
+						    	<td>accountant</td>
+						    	<td>35K-45K</td>
+						    	<td>11-Jun-2021</td>
+						    </tr>
+						    <tr>
+						    	<td>IT Support Engineer<br><span>Cloud Interactive Associates</span></td>
+						    	<td class="expired">expired</td>
+						    	<td>accountant</td>
+						    	<td>35K-45K</td>
+						    	<td>11-Jun-2021</td>
+						    </tr>
+						    <tr>
+						    	<td>IT Support Engineer<br><span>Cloud Interactive Associates</span></td>
+						    	<td class="expired">expired</td>
+						    	<td>accountant</td>
+						    	<td>35K-45K</td>
+						    	<td>11-Jun-2021</td>
+						    </tr>
+						    <tr>
+						    	<td>IT Support Engineer<br><span>Cloud Interactive Associates</span></td>
+						    	<td class="active">active</td>
+						    	<td>accountant</td>
+						    	<td>35K-45K</td>
+						    	<td>11-Jun-2021</td>
+						    </tr>
+						    <tr>
+						    	<td>IT Support Engineer<br><span>Cloud Interactive Associates</span></td>
+						    	<td class="active">active</td>
+						    	<td>accountant</td>
+						    	<td>35K-45K</td>
+						    	<td>11-Jun-2021</td>
+						    </tr>
+						    <tr>
+						    	<td>IT Support Engineer<br><span>Cloud Interactive Associates</span></td>
+						    	<td class="active">active</td>
+						    	<td>accountant</td>
+						    	<td>35K-45K</td>
+						    	<td>11-Jun-2021</td>
+						    </tr>
+						  </table>
+						</div>
+						<div class="click-more-jobs-btn">
+							<a href="#">see all applications ></a>
+						</div>
+					</div>
+				</div>
+				<div class="scheduled-interviews">
+					<div class="scheduled-interviews-head" style="padding: 5px 20px;">
+						<p class="scheduled-interviews-head-text">scheduled interview</p>
+						<p class="scheduled-interviews-head-desc">Get Jobs matching your preferences</p>
+					</div>
+					<div class="scheduled-interviews-body">
+						<form>
+							<div class="scheduled-interviews-form-head">
+								<p><img src="img/Frame.png" alt="Frame" /> Don’t Miss out!</p>
+							</div>
+							<div class="form-group">
+								<label>Job title:</label>
+								<input type="text" name="job-title" />
+							</div>
+							<div class="form-group">
+								<label>location:</label>
+								<input type="text" name="location" />
+							</div>
+							<div class="form-group">
+								<input type="submit" value="Create Job Alert" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- Recommended Jos and Interview section ends -->
+		</div>
+	</div>
+	<!-- Main Content Ends -->
+</div>
+<!-- Mobile Sidebar Starts -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="sidenav-img">
+  	<img src="img/profile-2.png">
+  </div>
+  <ul>
+  	<li><a href="dashboard.html"><img src="img/dash-icon-1.png" />dashboard</a></li>
+  	<li><a href="profile.html"><img src="img/dash-icon-2.png" />profile</a></li>
+  	<li><a href="#"><img src="img/dash-icon-3.png" />job</a></li>
+  	<li><a href="#"><img src="img/dash-icon-4.png" />companies</a></li>
+  	<li><a href="#"><img src="img/dash-icon-5.png" />my resume</a></li>
+  	<li><a href="job-centers.html"><img src="img/dash-icon-6.png" />job centers</a></li>
+  	<li><a href="transactions.html"><img src="img/dash-icon-7.png" />transactions</a></li>
+  	<li><a href="interviews.html"><img src="img/dash-icon-8.png" />interviews</a></li>
+  	<li><a href="logout.html"><img src="img/dash-icon-9.png" />logout</a></li>
+  </ul>
+</div>
+<!-- Mobile Sidebar Ends -->
+
+<!-- Footer Section Starts -->
+<footer class="footer">
+	<div class="footer-bottom-img1">
+		<img src="img/footer-bg.png" alt="Footer BG" />
+	</div>
+	<div class="footer-bottom-img2">
+		<img src="img/footer-bg1.png" alt="Footer BG " />
+	</div>
+	<div class="footer-items">
+		<div class="footer-item">
+			<div class="footer-item-head">
+				<p>company</p>
+			</div>
+			<div class="footer-item-links">
+				<ul>
+					<li><a href="about-us.html">about us</a></li>
+					<li><a href="terms.html">terms of services</a></li>
+					<li><a href="privacy.html">privacy</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-item">
+			<div class="footer-item-head">
+				<p>faj</p>
+			</div>
+			<div class="footer-item-links">
+				<ul>
+					<li><a href="job-search.html">job search</a></li>
+					<li><a href="pricing-plans.html">price plans</a></li>
+					<li><a href="employers.html">employers</a></li>
+					<li><a href="job-seekers.html">job seekers</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-item">
+			<div class="footer-item-head">
+				<p>resources</p>
+			</div>
+			<div class="footer-item-links">
+				<ul>
+					<li><a href="self-employed.html">become self employed</a></li>
+					<li><a href="loop-vc.html">loop VC</a></li>
+					<li><a href="nysc.html">NYSC</a></li>
+					<li><a href="ayeen.html">ayeen</a></li>
+					<li><a href="nde.html">NDE</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-item">
+			<div class="footer-item-head">
+				<p>job seakers</p>
+			</div>
+			<div class="footer-item-links">
+				<ul>
+					<li><a href="cv-creator.html">CV creator</a></li>
+					<li><a href="job-centers.html">job centers</a></li>
+					<li><a href="job-seeker-videos.html">job seeker videos</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-item">
+			<div class="footer-item-head">
+				<p>help</p>
+			</div>
+			<div class="footer-item-links">
+				<ul>
+					<li><a href="faq.html">FAQs</a></li>
+					<li><a href="contact-us.html">contact us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="app-btns">
+		<a href="#"><img src="img/app.png" alt="App Store" /></a>
+		<a href="#"><img src="img/play.png" alt="Play Store" /></a>
+	</div>
+	<div class="copyright">
+		<p>Copyright 2021 FindAJob, LLC</p>
+	</div>
+</footer>	
+<!-- Footer Section Ends	 -->
+	<script src="js/dashboard.js"></script>
+	<!-- Include jQuery -->
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  	  $("#dropdown-btn").click(function(){
+  	    $(".job-dropdown").toggle();
+  	  });
+  	  $("#dropdown-btn1").click(function(){
+  	    $(".resume-dropdown").toggle();
+  	  });
+  	});
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+

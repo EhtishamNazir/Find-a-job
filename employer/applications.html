@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard - Applications</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/dashboard.css">
+<body>
+<div class="wrapper">
+	<!-- sidebar Starts -->
+	<div class="sidebar">
+		<div class="sidebar-logo">
+			<a href="employer-dashboard.html">
+				<img src="img/logo.png" alt="Logo" />
+			</a>
+		</div>
+		<div class="sidebar-menu">
+			<ul>
+				<li><a href="dashboard.html"><img src="img/dash-icon-1.png" class="dark" /><img src="img/dash-icon-1-1.png" class="light" />dashboards</a></li>
+				<li>
+					<a href="#" class="dropdown-btn" id="dropdown-btn"><img src="img/dash-icon-2.png" class="dark" /><img src="img/dash-icon-2-2.png" class="light" />Company profile <i class="fa fa-angle-down angle-down"></i></a></li>
+				</li>
+				<li class="job-dropdown"><a href="company-details.html"><img src="img/dash-icon-10.png" class="dark" /><img src="img/dash-icon-10-10.png" class="light" />company details</a></li>
+				<li class="job-dropdown"><a href="contact-person.html"><img src="img/dash-icon-10.png" class="dark" /><img src="img/dash-icon-10-10.png" class="light" />contact person</a></li>
+				<li><a href="post-job.html" class="dropdown-btn"><img src="img/dash-icon-3.png" class="dark" /><img src="img/dash-icon-3-3.png" class="light" />post a new job</a></li>
+				</li>
+				<li><a href="search.html"><img src="img/dash-icon-11.png" class="dark" /><img src="img/dash-icon-11-11.png" class="light" />search</a></li>
+				<li><a href="payments.html"><img src="img/dash-icon-12.png" class="dark" /><img src="img/dash-icon-12-12.png" class="light" />payments</a></li>
+				<li><a href="manage-jobs.html"><img src="img/dash-icon-13.png" class="dark" /><img src="img/dash-icon-13-13.png" class="light" />manage jobs</a></li>
+				<li><a href="applications.html" class="active"><img src="img/dash-icon-5.png" class="dark" /><img src="img/dash-icon-5-5.png" class="light" />applications</a></li>
+				<li><a href="shortlisted-resume.html"><img src="img/dash-icon-3.png" class="dark" /><img src="img/dash-icon-3-3.png" class="light" />shortlisted resume</a></li>
+				<li><a href="messages.html"><img src="img/dash-icon-14.png" class="dark" /><img src="img/dash-icon-14-14.png" class="light" />messages</a></li>
+				<li><a href="logout.html"><i class="fa fa-sign-out"></i>logout</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- sidebar Ends -->
+
+	<!-- Main Content Starts -->
+	<div class="main">
+		<!-- Header Starts -->
+		<div class="header">
+			<div class="links">
+				<ul>
+					<li>
+						<a href="#"><img src="img/search-1.png" alt="Search icon"></a>
+					</li>
+					<li class="notify-icon" >
+						<img src="img/bell-icon.png" alt="Bell Icon" />
+							<span>0</span>
+						</i>
+					</li>
+					<li><span>Jane Doe</span><img src="img/profile-3.png" alt="Profile Pic"></li>
+				</ul>
+			</div>
+			<div class="toggle-btn">
+				<i onclick="openNav()" class="fa fa-bars"></i>
+			</div>
+		</div>
+		<!-- Header Ends -->
+		<div class="applications main-content">
+			<div class="applications-head">
+				<p>applications</p>
+			</div>
+
+			<!-- Featured Job Seeker Section Starts -->
+			<div class="featured-job"> 
+				<div class="featured-job-head">
+					<p>featured job seeker</p>
+				</div>
+				<div class="featured-job-desc">
+					<p>Recommendations are based on <span>Job Seekers Profile, Proximity to your Office & Company Preferences</span> on FAJ</p>
+				</div>
+				<div class="featured-job-body">
+					<div class="featured-job-items">
+						<div class="featured-job-item">
+							<div class="check">
+								<img src="img/check.png">
+							</div>
+							<div class="featured-job-item-img">
+								<img src="img/profile-2.png" alt="Profile Image" />
+							</div>
+							<div class="featured-job-item-name">
+								<p>john doe</p>
+							</div>
+						</div>
+						<div class="featured-job-item">
+							<div class="check">
+								<img src="img/check.png">
+							</div>
+							<div class="featured-job-item-img">
+								<img src="img/profile-2.png" alt="Profile Image" />
+							</div>
+							<div class="featured-job-item-name">
+								<p>john doe</p>
+							</div>
+						</div>
+						<div class="featured-job-item">
+							<div class="check">
+								<img src="img/check.png">
+							</div>
+							<div class="featured-job-item-img">
+								<img src="img/profile-2.png" alt="Profile Image" />
+							</div>
+							<div class="featured-job-item-name">
+								<p>john doe</p>
+							</div>
+						</div>
+						<div class="featured-job-item">
+							<div class="check">
+								<img src="img/check.png">
+							</div>
+							<div class="featured-job-item-img">
+								<img src="img/profile-2.png" alt="Profile Image" />
+							</div>
+							<div class="featured-job-item-name">
+								<p>john doe</p>
+							</div>
+						</div>
+						<div class="featured-job-item">
+							<div class="check">
+								<img src="img/check.png">
+							</div>
+							<div class="featured-job-item-img">
+								<img src="img/profile-2.png" alt="Profile Image" />
+							</div>
+							<div class="featured-job-item-name">
+								<p>john doe</p>
+							</div>
+						</div>
+						<div class="featured-job-item">
+							<div class="check">
+								<img src="img/check.png">
+							</div>
+							<div class="featured-job-item-img">
+								<img src="img/profile-2.png" alt="Profile Image" />
+							</div>
+							<div class="featured-job-item-name">
+								<p>john doe</p>
+							</div>
+						</div>
+						<div class="featured-job-item">
+							<div class="check">
+								<img src="img/check.png">
+							</div>
+							<div class="featured-job-item-img">
+								<img src="img/profile-2.png" alt="Profile Image" />
+							</div>
+							<div class="featured-job-item-name">
+								<p>john doe</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Featured Job Seeker Section Ends -->
+
+			<!-- Search Results Section Starts -->
+			<div class="search-result">
+				<div class="search-result-head">
+					<p>Showing 1-10 of 44 Job Seekers</p>
+					<div class="search-result-head-form">
+					<form>
+						<select>
+							<option>Location</option>
+							<option>Location 1</option>
+							<option>Location 2</option>
+							<option>Location 3</option>
+							<option>Location 4</option>
+							<option>Location 5</option>
+						</select>
+						<select>
+							<option>Relision</option>
+							<option>Religion 1</option>
+							<option>Religion 2</option>
+							<option>Religion 3</option>
+							<option>Religion 4</option>
+							<option>Religion 5</option>
+						</select>
+					</form>
+				</div>
+				</div>
+				<!-- Payments Section Starts -->
+				<div class="payments">
+					<div style="overflow-x: auto;">
+						<table>
+							<tr>
+								<th>name</th>
+								<th>location</th>
+								<th>experience length</th>
+								<th>job title</th>
+								<th>date of application</th>
+								<th>actions</th>
+							</tr>
+							<tr>
+								<td>john doe</td>
+								<td>lagos</td>
+								<td>7 years</td>
+								<td>Accountant</td>
+								<td>20-07-21</td>
+								<td class="action-btns">
+									<a href="#">shortlist</a> | <a href="#">contact</a> | <a href="#">view resume</a>
+								</td>
+							</tr>
+							<tr>
+								<td>john doe</td>
+								<td>lagos</td>
+								<td>7 years</td>
+								<td>Accountant</td>
+								<td>20-07-21</td>
+								<td class="action-btns">
+									<a href="#">shortlist</a> | <a href="#">contact</a> | <a href="#">view resume</a>
+								</td>
+							</tr>
+							<tr>
+								<td>john doe</td>
+								<td>lagos</td>
+								<td>7 years</td>
+								<td>Accountant</td>
+								<td>20-07-21</td>
+								<td class="action-btns">
+									<a href="#">shortlist</a> | <a href="#">contact</a> | <a href="#">view resume</a>
+								</td>
+							</tr>
+							<tr>
+								<td>john doe</td>
+								<td>lagos</td>
+								<td>7 years</td>
+								<td>Accountant</td>
+								<td>20-07-21</td>
+								<td class="action-btns">
+									<a href="#">shortlist</a> | <a href="#">contact</a> | <a href="#">view resume</a>
+								</td>
+							</tr>
+							<tr>
+								<td>john doe</td>
+								<td>lagos</td>
+								<td>7 years</td>
+								<td>Accountant</td>
+								<td>20-07-21</td>
+								<td class="action-btns">
+									<a href="#">shortlist</a> | <a href="#">contact</a> | <a href="#">view resume</a>
+								</td>
+							</tr>
+							<tr>
+								<td>john doe</td>
+								<td>lagos</td>
+								<td>7 years</td>
+								<td>Accountant</td>
+								<td>20-07-21</td>
+								<td class="action-btns">
+									<a href="#">shortlist</a> | <a href="#">contact</a> | <a href="#">view resume</a>
+								</td>
+							</tr>
+							<tr>
+								<td>john doe</td>
+								<td>lagos</td>
+								<td>7 years</td>
+								<td>Accountant</td>
+								<td>20-07-21</td>
+								<td class="action-btns">
+									<a href="#">shortlist</a> | <a href="#">contact</a> | <a href="#">view resume</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- Payments Section Ends -->
+			</div>
+			<!-- Search Results Section Ends -->
+		</div>
+	</div>
+	<!-- Main Content Ends -->
+</div>
+<!-- Mobile Sidebar Starts -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="sidenav-img">
+  	<img src="img/profile-2.png">
+  </div>
+  <ul>
+  	<li><a href="employer-dashboard.html"><img src="img/dash-icon-1.png" />dashboard</a></li>
+  	<li><a href="profile.html"><img src="img/dash-icon-2.png" />profile</a></li>
+  	<li><a href="#"><img src="img/dash-icon-3.png" />job</a></li>
+  	<li><a href="#"><img src="img/dash-icon-4.png" />companies</a></li>
+  	<li><a href="#"><img src="img/dash-icon-5.png" />my resume</a></li>
+  	<li><a href="job-centers.html"><img src="img/dash-icon-6.png" />job centers</a></li>
+  	<li><a href="transactions.html"><img src="img/dash-icon-7.png" />transactions</a></li>
+  	<li><a href="interviews.html"><img src="img/dash-icon-8.png" />interviews</a></li>
+  	<li><a href="logout.html"><img src="img/dash-icon-9.png" />logout</a></li>
+  </ul>
+</div>
+<!-- Mobile Sidebar Ends -->
+
+<!-- Footer Section Starts -->
+<footer class="footer">
+	<div class="footer-bottom-img1">
+		<img src="img/footer-bg.png" alt="Footer BG" />
+	</div>
+	<div class="footer-bottom-img2">
+		<img src="img/footer-bg1.png" alt="Footer BG " />
+	</div>
+	<div class="footer-items">
+		<div class="footer-item">
+			<div class="footer-item-head">
+				<p>company</p>
+			</div>
+			<div class="footer-item-links">
+				<ul>
+					<li><a href="about-us.html">about us</a></li>
+					<li><a href="terms.html">terms of services</a></li>
+					<li><a href="privacy.html">privacy</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-item">
+			<div class="footer-item-head">
+				<p>faj</p>
+			</div>
+			<div class="footer-item-links">
+				<ul>
+					<li><a href="job-search.html">job search</a></li>
+					<li><a href="pricing-plans.html">price plans</a></li>
+					<li><a href="employers.html">employers</a></li>
+					<li><a href="job-seekers.html">job seekers</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-item">
+			<div class="footer-item-head">
+				<p>resources</p>
+			</div>
+			<div class="footer-item-links">
+				<ul>
+					<li><a href="self-employed.html">become self employed</a></li>
+					<li><a href="loop-vc.html">loop VC</a></li>
+					<li><a href="nysc.html">NYSC</a></li>
+					<li><a href="ayeen.html">ayeen</a></li>
+					<li><a href="nde.html">NDE</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-item">
+			<div class="footer-item-head">
+				<p>job seakers</p>
+			</div>
+			<div class="footer-item-links">
+				<ul>
+					<li><a href="cv-creator.html">CV creator</a></li>
+					<li><a href="job-centers.html">job centers</a></li>
+					<li><a href="job-seeker-videos.html">job seeker videos</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-item">
+			<div class="footer-item-head">
+				<p>help</p>
+			</div>
+			<div class="footer-item-links">
+				<ul>
+					<li><a href="faq.html">FAQs</a></li>
+					<li><a href="contact-us.html">contact us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="app-btns">
+		<a href="#"><img src="img/app.png" alt="App Store" /></a>
+		<a href="#"><img src="img/play.png" alt="Play Store" /></a>
+	</div>
+	<div class="copyright">
+		<p>Copyright 2021 FindAJob, LLC</p>
+	</div>
+</footer>	
+<!-- Footer Section Ends	 -->
+	<script src="js/dashboard.js"></script>
+	<!-- Include jQuery -->
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  	  $("#dropdown-btn").click(function(){
+  	    $(".job-dropdown").toggle();
+  	  });
+  	  $("#dropdown-btn1").click(function(){
+  	    $(".resume-dropdown").toggle();
+  	  });
+  	});
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
